@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         height: 80,
     },
     aboutContainer: {
-        flex:0.8,
+        flex:0.7,
         alignItems: "center",
         justifyContent: "center",
         marginBottom: SIZES.padding,
