@@ -1,9 +1,9 @@
 import {RewardedAd, RewardedAdEventType, TestIds} from "@react-native-firebase/admob";
 import {ToastAndroid} from "react-native";
-import { addPoint } from "./addPoint";
+import {addPoint} from "./addPoint";
 
-export const rewardAd = () => {
-    const rewarded = RewardedAd.createForAdRequest("ca-app-pub-5841782551928007/4156844612", {
+export const rewardAd = (modalContext) => {
+    const rewarded = RewardedAd.createForAdRequest("ca-app-pub-7419198634648795/1993808565", {
         requestNonPersonalizedAdsOnly: true,
         keywords: ['fashion', 'clothing'],
     });
@@ -11,15 +11,18 @@ export const rewardAd = () => {
         if (type === RewardedAdEventType.LOADED) {
             rewarded.show()
         }
-        if(type === RewardedAdEventType.EARNED_REWARD){
-            addPoint().then(()=>{
-                console.log("You have one point")
-            })
-            ToastAndroid.show("Congratulation 🥳 You got 1 point 🥳🥳🥳🥳🥳",ToastAndroid.LONG)
+        if (type === RewardedAdEventType.EARNED_REWARD) {
+            modalContext.setShowModal(true)
+            setTimeout(() => {
+                modalContext.setShowModal(false)
+                addPoint().then(() => {
+                    ToastAndroid.show("Congratulation 🥳 You got 1 point 🥳🥳🥳🥳🥳", ToastAndroid.LONG)
+                })
+            }, 20000)
         }
     });
     rewarded.load()
-    return ()=>{
+    return () => {
         eventListener = null
     }
 }

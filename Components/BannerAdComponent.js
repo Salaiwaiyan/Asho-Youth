@@ -1,9 +1,9 @@
 import React from "react";
-import { BannerAd, BannerAdSize } from "@react-native-firebase/admob";
+import {BannerAd, BannerAdSize, TestIds} from "@react-native-firebase/admob";
 
 const BannerAdComponent = props => {
   return(
-    <BannerAd unitId="ca-app-pub-5841782551928007/2647487673" size={BannerAdSize.BANNER}/>
+    <BannerAd unitId="ca-app-pub-7419198634648795/1993808565" size={BannerAdSize.BANNER}/>
   )
 }
 

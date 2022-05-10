@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "355996593532",
-    "project_id": "asho-youth-48ca7",
-    "storage_bucket": "asho-youth-48ca7.appspot.com"
+    "project_number": "109112239741",
+    "project_id": "asho-youth-134bd",
+    "storage_bucket": "asho-youth-134bd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:355996593532:android:36dab2db64c2fc917c48f9",
+        "mobilesdk_app_id": "1:109112239741:android:6ee970b8479b494ac47314",
         "android_client_info": {
           "package_name": "com.ashoyouth"
         }
       },
       "oauth_client": [
         {
-          "client_id": "355996593532-pieucgfepahk97hv872154qlh5da1piq.apps.googleusercontent.com",
+          "client_id": "109112239741-p88u4mrq2ffboephpqs77itohoptv21d.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ashoyouth",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "355996593532-p12op1vi926bsunna37e7ill1g5cs737.apps.googleusercontent.com",
+          "client_id": "109112239741-dekjtuflbu2gr726rgc3m9uofsldrf2v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCMDekHGv6P9AwIb6tnLKSqfdCSanBWnu4"
+          "current_key": "AIzaSyAMibOkQfcrz3BxsAXUHNDwu2oFRJmcEqU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "355996593532-p12op1vi926bsunna37e7ill1g5cs737.apps.googleusercontent.com",
+              "client_id": "109112239741-dekjtuflbu2gr726rgc3m9uofsldrf2v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
