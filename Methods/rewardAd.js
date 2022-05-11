@@ -3,7 +3,7 @@ import {ToastAndroid} from "react-native";
 import {addPoint} from "./addPoint";
 
 export const rewardAd = (modalContext) => {
-    const rewarded = RewardedAd.createForAdRequest("ca-app-pub-7419198634648795/1993808565", {
+    const rewarded = RewardedAd.createForAdRequest("ca-app-pub-7419198634648795/3115318548", {
         requestNonPersonalizedAdsOnly: true,
         keywords: ['fashion', 'clothing'],
     });
